@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Thalassemia Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MedPredict</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#predict">Predict</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Alpha Thalassemia Disease Prediction</h1>
+            <p>AI-powered prediction for early detection of Alpha Thalassemia</p>
+            <button onclick="scrollToPredict()">Start Prediction</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Alpha Thalassemia</h2>
+        <p>Alpha Thalassemia is a blood disorder that reduces the production of hemoglobin...</p>
+    </section>
+
+    <section id="predict" class="prediction-form">
+        <h2>Disease Prediction</h2>
+        <form id="predictionForm">
+            <div class="form-group">
+                <label for="hemoglobin">Hemoglobin Level:</label>
+                <input type="number" id="hemoglobin" name="hemoglobin" step="0.1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="rbc">RBC Count:</label>
+                <input type="number" id="rbc" name="rbc" step="0.1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="mcv">MCV Level:</label>
+                <input type="number" id="mcv" name="mcv" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            
+            <button type="submit">Predict Disease</button>
+        </form>
+        
+        <div id="result" class="result"></div>
+    </section>
+
+    <footer id="contact">
+        <p>Contact: medicalteam@example.com</p>
+        <p>© 2025 MedPredict. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
